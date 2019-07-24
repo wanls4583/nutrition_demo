@@ -1,5 +1,5 @@
 var data = {};
-var localData = localStorage.getItem('list');
+var localData = localStorage.getItem('list2');
 localData = localData && JSON.parse(localData);
 if (!localData) {
     window.location.href = 'index.html';
@@ -14,7 +14,7 @@ function init() {
 }
 
 function initData() {
-    var enter_num = localStorage.getItem('enter_num');
+    var enter_num = localStorage.getItem('enter_num2');
     if (enter_num) {
         for (var i = 0; i < localData.length; i++) {
             if (localData[i].enter_num == enter_num) {
@@ -48,6 +48,6 @@ function save() {
             data[id] = getVal(id);
         }
     }
-    localStorage.setItem('list', JSON.stringify(localData));
+    localStorage.setItem('list2', JSON.stringify(localData));
     alert('保存成功')
 }

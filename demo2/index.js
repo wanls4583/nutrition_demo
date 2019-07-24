@@ -1,4 +1,4 @@
-var localData = localStorage.getItem('list');
+var localData = localStorage.getItem('list2');
 localData = localData && JSON.parse(localData);
 if (!localData) {
     localData = [];
@@ -37,7 +37,7 @@ if (!localData) {
         obj.jilu_date = '2017' + '-' + preZero(Mock.Random.integer(1, 12)) + '-' + preZero(Mock.Random.integer(1, 29));
         localData.push(obj)
     }
-    localStorage.setItem('list', JSON.stringify(localData));
+    localStorage.setItem('list2', JSON.stringify(localData));
 }
 init();
 
@@ -93,6 +93,6 @@ function getVal(id) {
 }
 
 function gotoDangan(enter_num) {
-	localStorage.setItem('enter_num', enter_num);
+	localStorage.setItem('enter_num2', enter_num);
 	location.href = 'dangan.html';
 }
