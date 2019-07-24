@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NRS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <script type="text/javascript" src="./jquery.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="nav_title nav">营养管理</div>
+        <div class="nav"><a href="index.html">病人列表</a></div>
+        <div class="nav"><a href="dangan.html">病人信息</a></div>
+        <div class="nav active">NRS 2000</div>
+        <div class="nav"><a href="zhenduan.html">营养诊断</a></div>
+        <div class="nav"><a href="jilu.html">治疗记录</a></div>
+        <div class="nav"><a href="zonghepinggu.html">综合评估</a></div>
+        <div class="nav"><a href="yingyangchufang.html">营养处方</a></div>
+        <div class="nav"><a href="shipuzhiding.html">食谱制定</a></div>
+        <div class="nav"><a href="xinkaiyizhu.html">新开医嘱</a></div>
+        <div class="nav"><a href="yingyangbingli.html">营养病历</a></div>
+    </div>
+    <div class="wrap">
+        <div class="row">
+            <span class="col"><span class="label">筛查日期:</span><input type="text" id="nrs_date"></span>
+        </div>
+        <div class="title">人体测量</div>
+        <div class="row">
+            <span class="col"><span class="label">身高:</span><input type="text" id="height"></span>
+            <span class="col"><span class="label">体重:</span><input type="text" id="weight"></span>
+        </div>
+        <div class="title">营养状况</div>
+        <div class="row">
+            <table>
+                <tr>
+                    <th>体重与进食状况</th>
+                    <th>分数</th>
+                    <th>若"是"请勾选</th>
+                </tr>
+                <tr>
+                    <td>近1月~3月内体重无下降，或近一周进食量无变化</td>
+                    <td>0</td>
+                    <td><input name="status" type="radio" data="0"></td>
+                </tr>
+                <tr>
+                    <td>2.近3月内体重下降>5%，或近一周内进食量减少25%~50%</td>
+                    <td>1</td>
+                    <td><input name="status" type="radio" data="1"></td>
+                </tr>
+                <tr>
+                    <td>3.近2月内体重下降>5%，或近一周内进食量减少51%~75%</td>
+                    <td>2</td>
+                    <td><input name="status" type="radio" data="2"></td>
+                </tr>
+                <tr>
+                    <td>4.近1月内体重下降>5%，或近3月体重下降>15%，或BMI<18.5</td>
+                    <td>3</td>
+                    <td><input name="status" type="radio" data="3"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="title">疾病严重程度</div>
+        <div class="row">
+            <table>
+                <tr>
+                    <th>疾病评分</th>
+                    <th>分数</th>
+                    <th>若"是"请勾选</th>
+                </tr>
+                <tr>
+                    <td>1.无以下疾病</td>
+                    <td>0</td>
+                    <td><input name="degree" type="radio" data="0"></td>
+                </tr>
+                <tr>
+                    <td>2.髋骨折、慢性疾病急性发作或有并发症、慢性阻塞性肺病、血液透析、肝硬化、一般恶性肿瘤、糖尿病</td>
+                    <td>1</td>
+                    <td><input name="degree" type="radio" data="1"></td>
+                </tr>
+                <tr>
+                    <td>3.腹部大手术、脑卒中、重度肺炎、血液恶性肿瘤</td>
+                    <td>2</td>
+                    <td><input name="degree" type="radio" data="2"></td>
+                </tr>
+                <tr>
+                    <td>4.颅脑损伤、骨髓移植、APACHE-II评分>10分ICU患者</td>
+                    <td>3</td>
+                    <td><input name="degree" type="radio" data="3"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="title">分析</div>
+        <div class="row">
+            <span class="col"><span class="label">总分</span><input type="text" id="total_score"></span>
+            <span class="col"><span class="label">执行人</span><input type="text" id="executor"></span>
+            <span class="col"><span class="label">结果解释</span><input type="text" id="nrs_result"></span>
+        </div>
+        <div class="row" style="text-align: center;">
+            <button id="save">保存</button>
+        </div>
+    </div>
+    <div class="footer">
+        2019 © 天一科技有限公司
+    </div>
+    <script type="text/javascript" src="./nrs.js"></script>
+</body>
+
+</html>

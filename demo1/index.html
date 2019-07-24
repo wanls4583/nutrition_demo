@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>病人列表</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.bootcss.com/Mock.js/1.0.1-beta3/mock-min.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <style type="text/css">
+    .search_w {
+        margin-bottom: 20px;
+    }
+    th,
+    td {
+        width: auto;
+        background: #fff !important;
+    }
+    th {
+    	background: #eee !important;
+    }
+    </style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="title">病人列表</div>
+	</div>
+	<div class="menu">
+		<div class="nav_title nav">营养管理</div>
+		<div class="nav active"><a href="index.html">病人列表</a></div>
+	</div>
+	<div class="wrap">
+	    <div class="search_w">
+	        <span class="label">姓名:</span><input type="text" id="name"><button id="search">查询</button>
+	    </div>
+	    <div class="table">
+	        <table id="list">
+	        </table>
+	    </div>
+	</div>
+    <div class="footer">
+        2019 © 科琅医疗科技有限公司
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>营养诊断</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <script type="text/javascript" src="./jquery.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="nav_title nav">营养管理</div>
+        <div class="nav"><a href="index.html">病人列表</a></div>
+        <div class="nav">病人信息</div>
+        <div class="nav"><a href="nrs.html">NRS 2000</a></div>
+        <div class="nav active"><a href="zhenduan.html">营养诊断</a></div>
+        <div class="nav"><a href="jilu.html">治疗记录</a></div>
+        <div class="nav"><a href="zonghepinggu.html">综合评估</a></div>
+        <div class="nav"><a href="yingyangchufang.html">营养处方</a></div>
+        <div class="nav"><a href="shipuzhiding.html">食谱制定</a></div>
+        <div class="nav"><a href="xinkaiyizhu.html">新开医嘱</a></div>
+        <div class="nav"><a href="yingyangbingli.html">营养病历</a></div>
+    </div>
+    <div class="wrap">
+        <div class="row">
+            <span class="col"><span class="label">诊断日期:</span><input type="text" id="diagnose_date"></span>
+            <span class="col"><span class="label">营养师:</span><input type="text" id="diagnose_name"></span>
+        </div>
+        <div class="row">
+            <span class="col"><span class="label">诊断结果:</span><textarea id="diagnose_result" style=""></textarea></span>
+        </div>
+        <div class="row" style="text-align: center;">
+            <button id="save">保存</button>
+        </div>
+    </div>
+    <div class="footer">
+        2019 © 天一科技有限公司
+    </div>
+    <script type="text/javascript" src="./dangan.js"></script>
+</body>
+
+</html>

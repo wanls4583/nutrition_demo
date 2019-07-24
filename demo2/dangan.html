@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>病人信息</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="nav_title nav">营养管理</div>
+        <div class="nav"><a href="index.html">病人列表</a></div>
+        <div class="nav active">病人信息</div>
+        <div class="nav"><a href="nrs.html">NRS 2000</a></div>
+        <div class="nav"><a href="zhenduan.html">营养诊断</a></div>
+        <div class="nav"><a href="jilu.html">治疗记录</a></div>
+        <div class="nav"><a href="zonghepinggu.html">综合评估</a></div>
+        <div class="nav"><a href="yingyangchufang.html">营养处方</a></div>
+        <div class="nav"><a href="shipuzhiding.html">食谱制定</a></div>
+        <div class="nav"><a href="xinkaiyizhu.html">新开医嘱</a></div>
+        <div class="nav"><a href="yingyangbingli.html">营养病历</a></div>
+    </div>
+    <div class="wrap">
+        <div class="title">基本信息</div>
+        <div class="row">
+            <span class="col"><span class="label">入院号:</span><input type="text" id="enter_num"></span>
+            <span class="col"><span class="label">姓名:</span><input type="text" id="name"></span>
+            <span class="col"><span class="label">性别:</span><input type="text" id="sex"></span>
+        </div>
+        <div class="row">
+            <span class="col"><span class="label">身高:</span><input type="text" id="height"></span>
+            <span class="col"><span class="label">体重:</span><input type="text" id="weight"></span>
+            <span class="col"><span class="label">出生日期:</span><input type="text" id="birth"></span>
+        </div>
+        <div class="row">
+            <span class="col"><span class="label">年龄:</span><input type="text" id="age"></span>
+            <span class="col"><span class="label">身份证:</span><input type="text" id="id_card"></span>
+            <span class="col"><span class="label">地址:</span><input type="text" id="address"></span>
+        </div>
+        <div class="row">
+            <span class="col"><span class="label">联系电话:</span><input type="text" id="phone"></span>
+        </div>
+        <div class="title">入院信息</div>
+        <div class="row">
+            <span class="col"><span class="label">入院时间:</span><input type="text" id="enter_date"></span>
+            <span class="col"><span class="label">出院时间:</span><input type="text" id="leave_date"></span>
+            <span class="col"><span class="label">科室:</span><input type="text" id="department"></span>
+        </div>
+        <div class="row">
+            <span class="col"><span class="label">病区:</span><input type="text" id="area"></span>
+            <span class="col"><span class="label">床号:</span><input type="text" id="bed_num"></span>
+            <span class="col"><span class="label">疾病史:</span><input type="text" id="history"></span>
+        </div>
+        <div class="row" style="text-align: center;">
+            <button id="save">保存</button>
+        </div>
+    </div>
+    <div class="footer">
+        2019 © 天一科技有限公司
+    </div>
+    <script type="text/javascript" src="./dangan.js"></script>
+</body>
+
+</html>

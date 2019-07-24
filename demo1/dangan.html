@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>档案信息</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">档案信息</div>
+    </div>
+    <div class="menu">
+        <div class="nav_title nav">营养管理</div>
+        <div class="nav"><a href="index.html">病人列表</a></div>
+        <div class="nav active"><a href="dangan.html">档案信息</a></div>
+        <div class="nav"><a href="nrs.html">NRS筛查</a></div>
+        <div class="nav"><a href="yingyangpinggu.html">营养评估</a></div>
+        <div class="nav"><a href="yingyangjilu.html">营养记录</a></div>
+        <div class="nav"><a href="yingyangchufang.html">营养处方</a></div>
+        <div class="nav"><a href="yingyangyizhu.html">营养医嘱</a></div>
+        <div class="nav"><a href="bingli.html">患者病历</a></div>
+    </div>
+    <div class="wrap">
+        <div class="table">
+            <table>
+                <tr>
+                    <td colspan="6" class="col_title">患者信息</td>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td><input type="text" id="name"></td>
+                    <td>住院号</td>
+                    <td><input type="text" id="enter_num"></td>
+                    <td>性别</td>
+                    <td><input type="text" id="sex"></td>
+                </tr>
+                <tr>
+                    <td>出生日期</td>
+                    <td><input type="text" id="birth"></td>
+                    <td>年龄</td>
+                    <td><input type="text" id="age"></td>
+                    <td>身份证</td>
+                    <td><input type="text" id="id_card"></td>
+                </tr>
+                <tr>
+                    <td>地址</td>
+                    <td><input type="text" id="address"></td>
+                    <td>联系电话</td>
+                    <td><input type="text" id="phone"></td>
+                    <td colspan="2" class="white_bg"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="col_title">入院信息</td>
+                </tr>
+                <tr>
+                    <td>入院日期</td>
+                    <td><input type="text" id="enter_date"></td>
+                    <td>身高</td>
+                    <td><input type="text" id="height"></td>
+                    <td>体重</td>
+                    <td><input type="text" id="weight"></td>
+                </tr>
+                <tr>
+                    <td>科室</td>
+                    <td><input type="text" id="department"></td>
+                    <td>床号</td>
+                    <td><input type="text" id="bed_num"></td>
+                    <td>临床诊断</td>
+                    <td><input type="text" id="history"></td>
+                </tr>
+                <tr><td colspan="6" class="white_bg"><button id="save">保存</button></td></tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        2019 © 科琅医疗科技有限公司
+    </div>
+    <script type="text/javascript" src="./dangan.js"></script>
+</body>
+
+</html>

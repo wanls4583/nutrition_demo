@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NRS筛查</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">NRS</div>
+    </div>
+    <div class="menu">
+        <div class="nav_title nav">营养管理</div>
+        <div class="nav"><a href="index.html">病人列表</a></div>
+        <div class="nav"><a href="dangan.html">档案信息</a></div>
+        <div class="nav active"><a href="nrs.html">NRS筛查</a></div>
+        <div class="nav"><a href="yingyangpinggu.html">营养评估</a></div>
+        <div class="nav"><a href="yingyangjilu.html">营养记录</a></div>
+        <div class="nav"><a href="yingyangchufang.html">营养处方</a></div>
+        <div class="nav"><a href="yingyangyizhu.html">营养医嘱</a></div>
+        <div class="nav"><a href="bingli.html">患者病历</a></div>
+    </div>
+    <div class="wrap">
+        <div class="table">
+            <table>
+                <tr>
+                    <td>筛查日期</td>
+                    <td><input type="text" id="nrs_date"></td>
+                    <td colspan="4" class="white_bg"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="col_title">人体测量</td>
+                </tr>
+                <tr>
+                    <td>身高</td>
+                    <td><input type="text" id="height"></td>
+                    <td>体重</td>
+                    <td><input type="text" id="weight"></td>
+                    <td colspan="2" class="white_bg"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="col_title">营养状况</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="gray_bg">体重与进食状况</td>
+                    <td colspan="2" class="gray_bg">分数</td>
+                    <td colspan="2" class="gray_bg">若"是"请勾选</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">近1月~3月内体重无下降，或近一周进食量无变化</td>
+                    <td colspan="2">0</td>
+                    <td colspan="2" class="white_bg"><input name="status" type="radio" data="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">2.近3月内体重下降>5%，或近一周内进食量减少25%~50%</td>
+                    <td colspan="2">1</td>
+                    <td colspan="2" class="white_bg"><input name="status" type="radio" data="1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">3.近2月内体重下降>5%，或近一周内进食量减少51%~75%</td>
+                    <td colspan="2">2</td>
+                    <td colspan="2" class="white_bg"><input name="status" type="radio" data="2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">4.近1月内体重下降>5%，或近3月体重下降>15%，或BMI<18.5</td>
+                    <td colspan="2">3</td>
+                    <td colspan="2" class="white_bg"><input name="status" type="radio" data="3"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="col_title">疾病严重程度</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="gray_bg">疾病评分</td>
+                    <td colspan="2" class="gray_bg">分数</td>
+                    <td colspan="2" class="gray_bg">若"是"请勾选</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">1.无以下疾病</td>
+                    <td colspan="2">0</td>
+                    <td colspan="2" class="white_bg"><input name="degree" type="radio" data="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">2.髋骨折、慢性疾病急性发作或有并发症、慢性阻塞性肺病、血液透析、肝硬化、一般恶性肿瘤、糖尿病</td>
+                    <td colspan="2">1</td>
+                    <td colspan="2" class="white_bg"><input name="degree" type="radio" data="1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">3.腹部大手术、脑卒中、重度肺炎、血液恶性肿瘤</td>
+                    <td colspan="2">2</td>
+                    <td colspan="2" class="white_bg"><input name="degree" type="radio" data="2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="white_bg">4.颅脑损伤、骨髓移植、APACHE-II评分>10分ICU患者</td>
+                    <td colspan="2">3</td>
+                    <td colspan="2" class="white_bg"><input name="degree" type="radio" data="3"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="col_title">分析</td>
+                </tr>
+                <tr>
+                    <td>总分</td>
+                    <td><input type="text" id="total_score"></td>
+                    <td>执行人</td>
+                    <td><input type="text" id="executor"></td>
+                    <td>结果解释</td>
+                    <td><input type="text" id="nrs_result"></td>
+                </tr>
+                <tr><td colspan="6" class="white_bg"><button id="save">保存</button></td></tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        2019 © 科琅医疗科技有限公司
+    </div>
+    <script type="text/javascript" src="./nrs.js"></script>
+</body>
+
+</html>
